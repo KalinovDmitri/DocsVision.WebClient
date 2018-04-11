@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Lightweight DocsVision web client" />
+	<meta name="Dmitry Kalinov aka bax_tang" />
+
+	<title>ПАО "Самаранефтехимпроект" - @ViewData["Title"]</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<environment include="Development">
+		<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	</environment>
+	<environment include="Staging,Production">
+		<link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/css/bootstrap.min.css"
+			  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+			  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+	</environment>
+</head>
+<body id="page-top">
+	<div>
+		@RenderBody()
+
+		<environment include="Development">
+			<script src="~/lib/jQuery/dist/jquery.js"></script>
+			<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+		</environment>
+		<environment include="Staging,Production">
+			<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+					asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+					asp-fallback-test="window.jQuery"
+					crossorigin="anonymous"
+					integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+			</script>
+			<script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/bootstrap.min.js"
+					asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+					asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+					crossorigin="anonymous"
+					integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+			</script>
+		</environment>
+	</div>
+</body>
+</html>
