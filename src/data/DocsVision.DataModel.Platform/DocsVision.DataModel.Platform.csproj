@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DocsVision.DataModel.Platform\DocsVision.DataModel.Platform.csproj" />
     <ProjectReference Include="..\DocsVision.DataModel\DocsVision.DataModel.csproj" />
   </ItemGroup>
 

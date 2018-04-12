@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging.Console;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+using Newtonsoft.Json;
+
 using DocsVision.DataModel.Entities;
 using DocsVision.WebClient.DataModel;
 
@@ -34,12 +36,15 @@ namespace DocsVision.WebClient.DataModel.Tests
 				Type = x.Type.Alias,
 				x.Description,
 				x.Dates.CreationDateTime
-			});
+			})
+			.OrderByDescending(x => x.CreationDateTime);
 
 			var queryResults = await query.ToListAsync();
 
 			Assert.IsNotNull(queryResults);
 			Assert.IsTrue(queryResults.Count > 0);
+
+			Console.WriteLine(JsonConvert.SerializeObject(queryResults, Formatting.Indented));
 		}
 		#endregion
 

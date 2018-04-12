@@ -17,17 +17,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.WebClient", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "framework", "framework", "{8C76708D-03FA-46CC-8A6F-E7090D414DD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.DataModel.EntityFramework", "src\framework\DocsVision.DataModel.EntityFramework\DocsVision.DataModel.EntityFramework.csproj", "{E775CFFE-A1CF-495B-9AFC-A99859B4453F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.DataModel.EntityFramework", "src\framework\DocsVision.DataModel.EntityFramework\DocsVision.DataModel.EntityFramework.csproj", "{E775CFFE-A1CF-495B-9AFC-A99859B4453F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.DataModel.EntityFramework.BackOffice", "src\framework\DocsVision.DataModel.EntityFramework.BackOffice\DocsVision.DataModel.EntityFramework.BackOffice.csproj", "{666B3649-BD52-4563-BE3C-AEAC9B6217E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.DataModel.EntityFramework.BackOffice", "src\framework\DocsVision.DataModel.EntityFramework.BackOffice\DocsVision.DataModel.EntityFramework.BackOffice.csproj", "{666B3649-BD52-4563-BE3C-AEAC9B6217E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.WebClient.DataModel", "src\DocsVision.WebClient.DataModel\DocsVision.WebClient.DataModel.csproj", "{6F56EE4F-6700-4401-A0DB-7706F9D450A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.WebClient.DataModel", "src\DocsVision.WebClient.DataModel\DocsVision.WebClient.DataModel.csproj", "{6F56EE4F-6700-4401-A0DB-7706F9D450A8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{7726836B-BBB6-4483-899D-57751F23318C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.DataModel.Tests", "tests\data\DocsVision.DataModel.Tests\DocsVision.DataModel.Tests.csproj", "{7380B420-3B88-4F64-A7EE-3ADAE0AACB49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.DataModel.Tests", "tests\data\DocsVision.DataModel.Tests\DocsVision.DataModel.Tests.csproj", "{7380B420-3B88-4F64-A7EE-3ADAE0AACB49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.WebClient.DataModel.Tests", "tests\DocsVision.WebClient.DataModel.Tests\DocsVision.WebClient.DataModel.Tests.csproj", "{91BD10E9-180A-4CFA-90D9-CA1510036C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsVision.WebClient.DataModel.Tests", "tests\DocsVision.WebClient.DataModel.Tests\DocsVision.WebClient.DataModel.Tests.csproj", "{91BD10E9-180A-4CFA-90D9-CA1510036C2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocsVision.DataModel.Platform", "src\data\DocsVision.DataModel.Platform\DocsVision.DataModel.Platform.csproj", "{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{91BD10E9-180A-4CFA-90D9-CA1510036C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91BD10E9-180A-4CFA-90D9-CA1510036C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91BD10E9-180A-4CFA-90D9-CA1510036C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{7726836B-BBB6-4483-899D-57751F23318C} = {FDFDC7FA-F407-4D44-BB95-9E348D7E6429}
 		{7380B420-3B88-4F64-A7EE-3ADAE0AACB49} = {7726836B-BBB6-4483-899D-57751F23318C}
 		{91BD10E9-180A-4CFA-90D9-CA1510036C2D} = {FDFDC7FA-F407-4D44-BB95-9E348D7E6429}
+		{964BA45F-3BFE-4D38-8D79-90FCEC3BD2EE} = {276CC74C-0DCB-40CE-A6A5-89BF9D42B153}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8DE0566-96B0-43E4-9055-47AAFC52E9BD}
