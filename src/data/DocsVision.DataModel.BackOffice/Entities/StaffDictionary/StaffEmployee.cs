@@ -33,10 +33,24 @@ namespace DocsVision.DataModel.Entities.BackOffice
 
 		public string Comments { get; set; } // Unicode, 1024 max
 
+		public DateTime? BirthDate { get; set; }
+
+		public string DisplayString { get; set; }
+
+		public string AccountSID { get; set; } // 256 max
+
+		public Guid? CardEmployeeID { get; set; }
+
+		public Guid? CardEmployeeKindID { get; set; } // CardEmployeeKind
+
+		public Guid? SecurityID { get; set; } // SDID
+
 		public virtual StaffPosition Position { get; set; }
 
 		public virtual StaffEmployee Manager { get; set; }
 
 		public virtual Folder PersonalFolder { get; set; }
+
+		public virtual SecurityInfo Security { get; set; }
 	}
 }
